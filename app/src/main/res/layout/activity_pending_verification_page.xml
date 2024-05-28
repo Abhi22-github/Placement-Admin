@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PendingVerificationPage">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:elevation="0dp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="15dp"
+            android:src="@drawable/ic_cancel"
+            app:tint="@color/black" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/manrope_semibold"
+        android:text="Pending Verification"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <TextView
+        style="@style/MaterialInputTextEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:text="@string/pending_verification_msg"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_waiting" />
+
+    <RelativeLayout
+        android:id="@+id/save_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="@dimen/margin_end">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/check_again_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:insetTop="1dp"
+            android:insetBottom="1dp"
+            android:letterSpacing="0"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:stateListAnimator="@null"
+            android:text="Check again"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="5dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:elevation="3dp"
+            android:theme="@style/ProgressBarStyle"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="#f9f9f9">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="Student Profile"
+            android:textAppearance="@style/PrimaryHeading"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f9f9f9"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/company_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeColor="@color/grey"
+                app:cardCornerRadius="5dp"
+                app:strokeWidth=".2dp"
+                app:cardElevation="0dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/green_faint"
+              >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/product_sans_regular"
+                        android:text="User is not verified."
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/student_info_box_border"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingStart="20dp">
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:elevation="3dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/avcoe_logo" />
+
+                    <ProgressBar
+                        android:id="@+id/profile_image_progress_bar"
+                        style="@style/LoadingProgressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".2dp"
+                    android:background="@color/fargrey"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="Personal Details"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="18sp" />
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Resume" />
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="?attr/selectableItemBackground"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:id="@+id/resume_name"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toLeftOf="@id/resume_view_button"
+                        android:textColor="@color/black" />
+
+                    <ImageButton
+                        android:id="@+id/resume_view_button"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="0dp"
+                        android:src="@drawable/ic_baseline_remove_red_eye_24"
+                        app:tint="@color/grey" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name" />
+
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact No." />
+
+                <TextView
+                    android:id="@+id/contact"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address" />
+
+                <TextView
+                    android:id="@+id/address"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ERP No." />
+
+                <TextView
+                    android:id="@+id/erp"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRN No." />
+
+                <TextView
+                    android:id="@+id/prn"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birth Date" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/student_info_box_border"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="Education Details"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SSC Percentage" />
+
+                <TextView
+                    android:id="@+id/ssc"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SSC College" />
+
+                <TextView
+                    android:id="@+id/ssc_college"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SSC Passout Year" />
+
+                <TextView
+                    android:id="@+id/ssc_year"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HSC Percentage" />
+
+                <TextView
+                    android:id="@+id/hsc"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/hsc_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HSC College" />
+
+                    <TextView
+                        android:id="@+id/hsc_college"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HSC Passout Year" />
+
+                    <TextView
+                        android:id="@+id/hsc_year"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diploma Percentage" />
+
+                <TextView
+                    android:id="@+id/diploma"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/diploma_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diploma College" />
+
+                    <TextView
+                        android:id="@+id/diploma_college"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diploma Year" />
+
+                    <TextView
+                        android:id="@+id/diploma_year"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Graduation Year" />
+
+                <TextView
+                    android:id="@+id/year"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Branch" />
+
+                <TextView
+                    android:id="@+id/branch"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/class_field"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Division"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/division"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/student_info_box_border"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="Current Education Details"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BE Aggregate " />
+
+                <TextView
+                    android:id="@+id/aggregate"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BE Aggregate Percentage" />
+
+                <TextView
+                    android:id="@+id/aggregate_percentage"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active Backlogs" />
+
+                <TextView
+                    android:id="@+id/active_backlogs"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Previous Backlogs" />
+
+                <TextView
+                    android:id="@+id/prev_backlogs"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sem 1" />
+
+                <TextView
+                    android:id="@+id/sem1"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sem 2" />
+
+                <TextView
+                    android:id="@+id/sem2"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sem 3" />
+
+                <TextView
+                    android:id="@+id/sem3"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sem 4" />
+
+                <TextView
+                    android:id="@+id/sem4"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sem 5" />
+
+                <TextView
+                    android:id="@+id/sem5"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sem 6" />
+
+                <TextView
+                    android:id="@+id/sem6"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sem 7" />
+
+                <TextView
+                    android:id="@+id/sem7"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sem 8" />
+
+                <TextView
+                    android:id="@+id/sem8"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have Gap between 12th and engineering first year?" />
+
+                <TextView
+                    android:id="@+id/gap"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have gap between engineering years?" />
+
+                <TextView
+                    android:id="@+id/engineering_gap"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/engineering_gap_years_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gap in years." />
+
+                    <TextView
+                        android:id="@+id/gap_years"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/student_info_box_border"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="Placement Details"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have any company Offer" />
+
+                <TextView
+                    android:id="@+id/is_placed"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/placed_company_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company Name" />
+
+                    <TextView
+                        android:id="@+id/placed_company_name"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company Location" />
+
+                    <TextView
+                        android:id="@+id/company_location"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offered Package" />
+
+                    <TextView
+                        android:id="@+id/offered_package"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Interview Date" />
+
+                    <TextView
+                        android:id="@+id/interview_date"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Joining Date" />
+
+                    <TextView
+                        android:id="@+id/joining_date"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offer Letter" />
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="?attr/selectableItemBackground"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/offer_letter_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            style="@style/student_info_details"
+                            android:layout_toLeftOf="@id/offer_letter_view_button"
+                            android:text=""
+                            android:textColor="@color/black" />
+
+                        <ImageButton
+                            android:id="@+id/offer_letter_view_button"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:padding="0dp"
+                            android:src="@drawable/ic_baseline_remove_red_eye_24"
+                             />
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/student_info_box_border"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="Other Details"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have Japanese Certification?" />
+
+                <TextView
+                    android:id="@+id/japanese_ans"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/japanese_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JLPT Level" />
+
+                    <TextView
+                        android:id="@+id/jlpt"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have Completed any Internship?" />
+
+                <TextView
+                    android:id="@+id/internship_ans"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/internship_details_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company" />
+
+                    <TextView
+                        android:id="@+id/company_name"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Position" />
+
+                    <TextView
+                        android:id="@+id/position"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration" />
+
+                    <TextView
+                        android:id="@+id/duration"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/student_info_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have Certificates?" />
+
+                <TextView
+                    android:id="@+id/certificated_ans"
+                    style="@style/student_info_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/certificate_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/student_info_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Certificates" />
+
+                    <TextView
+                        android:id="@+id/certificate"
+                        style="@style/student_info_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/action_button"
+        style="@style/Widget.Material3.FloatingActionButton.Large.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/green"
+        android:text="Action"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_baseline_filter_list_24"
+        app:iconTint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:elevation="3dp"
+        android:id="@+id/verification_module"
+        android:visibility="gone"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:weightSum="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:id="@+id/corrections"
+            android:textColor="@color/red"
+            app:strokeColor="@color/fargrey"
+            android:fontFamily="@font/product_sans_regular"
+            android:insetTop="0dp"
+            android:insetBottom="1dp"
+            android:letterSpacing="0"
+            android:text="Mark Corrections"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/product_sans_regular"
+            android:insetTop="1dp"
+            android:insetBottom="1dp"
+            android:id="@+id/verified"
+            android:letterSpacing="0"
+            android:text="Mark Verified"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="10dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:elevation="3dp"
+        android:visibility="gone"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:weightSum="3">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:id="@+id/suspend"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/product_sans_regular"
+            android:insetTop="0dp"
+            android:insetBottom="1dp"
+            android:letterSpacing="0"
+            android:text="Susupend"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/product_sans_regular"
+            android:insetTop="1dp"
+            android:insetBottom="1dp"
+            android:id="@+id/freeze"
+            android:letterSpacing="0"
+            android:text="Freeze"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/product_sans_regular"
+            android:insetTop="1dp"
+
+            android:insetBottom="1dp"
+            android:id="@+id/active"
+            android:letterSpacing="0"
+            android:text="Active"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

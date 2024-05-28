@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f9f9f9"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/file_name_layout"
+            style="@style/text_field_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:hint="File name"
+          android:background="@color/white"
+            app:placeholderText="e.g demo"
+            app:placeholderTextAppearance="@style/placeholder_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/file_name"
+                style="@style/edit_text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/columns_chip_group"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            app:chipSpacingVertical="-10dp"
+            app:singleSelection="false">
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resume_chip"
+                android:text="Resume" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/name_chip"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/number_chip"
+                android:layout_height="wrap_content"
+                android:text="Contact No." />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_chip"
+                android:text="Email" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/address_chip"
+                android:layout_height="wrap_content"
+                android:text="Address" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/erp_chip"
+                android:layout_height="wrap_content"
+                android:text="ERP No." />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/prn_chip"
+                android:layout_height="wrap_content"
+                android:text="PRN No." />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/bod_chip"
+                android:layout_height="wrap_content"
+                android:text="Birth Date" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender_chip"
+                android:text="Gender" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ssc_percentage_chip"
+                android:text="SSC Percentage" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ssc_college_chip"
+                android:text="SSC College" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ssc_year_chip"
+                android:text="SSC Passout Year" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hsc_percentage_chip"
+                android:text="HSC Percentage" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/hsc_college_chip"
+                android:layout_height="wrap_content"
+                android:text="HSC College" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/hsc_year_chip"
+                android:layout_height="wrap_content"
+                android:text="HSC Passout Year" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diploma_percentage_chip"
+                android:text="Diploma Percentage" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diploma_college_chip"
+                android:text="Diploma College" />
+
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/diploma_year_chip"
+                android:layout_height="wrap_content"
+                android:text="Diploma Passout Year" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/graducation_year_chip"
+                android:layout_height="wrap_content"
+                android:text="Graduation Year" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/branch_chip"
+                android:text="Branch" />
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/division_chip"
+                android:text="Division" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/be_aggregate_chip"
+                android:layout_height="wrap_content"
+                android:text="BE Aggregate" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/be_aggregate_percentage_chip"
+                android:text="BE Aggregate Percentage" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/active_backlog_chip"
+                android:text="Active Backlog" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/previous_backlogs_chip"
+                android:text="Previous Backlog" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sem1_chip"
+                android:text="Sem 1" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/sem2_chip"
+                android:layout_height="wrap_content"
+                android:text="Sem 2" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sem3_chip"
+                android:text="Sem 3" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/sem4_chip"
+                android:layout_height="wrap_content"
+                android:text="Sem 4" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sem5_chip"
+                android:text="Sem 5" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/sem6_chip"
+                android:layout_height="wrap_content"
+                android:text="Sem 6" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sem7_chip"
+                android:text="Sem 7" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/sem8_chip"
+                android:layout_height="wrap_content"
+                android:text="Sem 8" />
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hsc_gap_chip"
+                android:text="HSC to Degree gap" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/engineering_gap_chip"
+                android:layout_height="wrap_content"
+                android:text="Engineering Gap" />
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/engineering_gap_years_chip"
+                android:layout_height="wrap_content"
+                android:text="Engineering Gap in years" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/placed_chip"
+                android:text="Placed" />
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/placed_company_name_chip"
+                android:text="Placed Company Name" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/placed_company_location_chip"
+                android:text="Placed Company Location" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/placed_company_package_chip"
+                android:text="Placed Company Packaged" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/interview_date_chip"
+                android:text="Interview Date" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/joining_date_chip"
+                android:text="Joining Date" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/offer_letter_chip"
+                android:text="Offer Letter" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/japanese_chip"
+                android:text="Japanese Certifications done" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jlpt_chip"
+                android:text="Japanese Level" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/internship_chip"
+                android:text="Internship present" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/chipStyle"
+                android:layout_width="wrap_content"
+                android:id="@+id/certifications_chip"
+                android:layout_height="wrap_content"
+                android:text="Certifications present" />
+
+
+
+
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

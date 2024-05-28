@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="#f9f9f9">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="Request Details"
+            android:textAppearance="@style/PrimaryHeading"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_layout"
+        android:layout_below="@id/top">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="2"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Requester Name"
+                        android:layout_weight="1"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/requesters_name"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Request Time"
+                        android:layout_weight="1"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/request_time"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Request ID"
+                        android:layout_weight="1"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:maxLength="5"
+                        android:id="@+id/request_id"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Request Status"
+                        android:layout_weight="1"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/request_status"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sem1_layout"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 1"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/sem1_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/sem1_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sem2_layout"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 2"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/sem2_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/sem2_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sem3_layout"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 3"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/sem3_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/sem3_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sem4_layout"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 4"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/sem4_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/sem4_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sem5_layout"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 5"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/sem5_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/sem5_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sem6_layout"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 6"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/sem6_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/sem6_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sem7_layout"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 7"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/sem7_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/sem7_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sem8_layout"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 8"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/sem8_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/sem8_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aggregate_layout"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="BE Aggregate"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/aggregate_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/aggregate_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/aggregate_percentage_layout"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="BE Aggregate Percentage"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/aggregate_percentage_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/aggregate_percentage_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/active_backlogs_layout"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Active Backlogs"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/active_backlogs_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/active_backlogs_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/previous_backlogs_layout"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="4"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Previous Backlogs"
+                        android:layout_weight="2"
+                        style="@style/company_details_label"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:id="@+id/previous_backlogs_old"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        style="@style/company_details_info"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="8dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        android:id="@+id/previous_backlogs_new"
+                        style="@style/company_details_info"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reject_button"
+            android:layout_width="0dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/product_sans_regular"
+            android:insetTop="1dp"
+            android:insetBottom="1dp"
+            android:letterSpacing="0"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:stateListAnimator="@null"
+            android:text="Reject"
+            android:textAllCaps="false"
+            android:textColor="@color/red"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            app:elevation="2dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/approve_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/product_sans_regular"
+            android:insetTop="1dp"
+            android:insetBottom="1dp"
+            android:layout_weight="1"
+            android:letterSpacing="0"
+            android:layout_marginStart="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:stateListAnimator="@null"
+            android:text="Approve"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:elevation="2dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:elevation="3dp"
+            android:theme="@style/ProgressBarStyle"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

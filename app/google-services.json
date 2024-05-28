@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "508357937128",
+    "project_id": "compnayinfo",
+    "storage_bucket": "compnayinfo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508357937128:android:cbc24e24631f455b04065d",
+        "android_client_info": {
+          "package_name": "com.roaaserver.placement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508357937128-fbfgtkhuj7ac0i83c7q4te8j3d47knkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-19-SFJntHpJTlpKvklQZv39_VHbAUPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508357937128-fbfgtkhuj7ac0i83c7q4te8j3d47knkn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508357937128:android:6222dc15e13de21d04065d",
+        "android_client_info": {
+          "package_name": "com.roaaserver.placementadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508357937128-fbfgtkhuj7ac0i83c7q4te8j3d47knkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-19-SFJntHpJTlpKvklQZv39_VHbAUPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508357937128-fbfgtkhuj7ac0i83c7q4te8j3d47knkn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

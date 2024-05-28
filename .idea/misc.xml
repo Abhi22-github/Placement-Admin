@@ -1,0 +1,93 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable-hdpi/box_border.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable-hdpi/circle_background.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable-ldpi/box_border.xml" value="0.19384615384615383" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable-ldpi/student_info_box_border.xml" value="0.19384615384615383" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable-mdpi/ic_launcher_background.xml" value="0.1285" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable-v24/bottom_sheet_rounded_corner.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable-xhdpi/box_border_message_name.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/bottom_sheet_corners.xml" value="0.102" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/company_box_border.xml" value="0.19384615384615383" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1285" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/ic_mail.xml" value="0.1285" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/ic_right.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/ic_security.xml" value="0.1285" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/innser_shadow.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/message_border.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/message_box_border.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/receivers_back.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/rounded_button.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/send_back.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/drawable/senders_back.xml" value="0.196875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_admin_list.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_admin_login.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_admin_main.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_company_details.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_console.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_create_account.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_create_company_details.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_edit_company_details.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_eligible_students_list.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_forget_password.xml" value="0.14493373236425822" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_main.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_message.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_pdf_viewer.xml" value="0.14493373236425822" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_pending_verification_page.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_profile_edit.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_request_detail.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_requests.xml" value="0.14493373236425822" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_search.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_splash_screen.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_student_list.xml" value="0.14493373236425822" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_student_profile.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_students_list.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_test.xml" value="0.1671875" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_username.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_verification.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/activity_verification_holder.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/add_member_bottom_sheet.xml" value="0.1675925925925926" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/admin_recycler_view.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/bottom_sheet_dialog_order_items_and_details.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/carousal_item_recycler_view.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/company_recycler_view.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/compnay_recycler_view.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/dynamic_fields_recycler_view.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/file_option_name_dialog.xml" value="0.14493373236425822" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/fragment_requsts.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/fragment_user.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/message_layout.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/messages_layout.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/nav_header.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/request_layout.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/request_layout_completed.xml" value="0.14493373236425822" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/request_layout_pending.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/sender_messages_layout.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/student_list_recycler_view.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/layout/test.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/menu/branch_menu.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/menu/degree_menu.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/menu/diploma_menu.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/menu/freeze_menu.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/menu/hsc_menu.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/menu/nav_drawer_menu.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/menu/nav_header_menu.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/menu/option_menu.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/menu/placement_menu.xml" value="0.1765625" />
+        <entry key="..\:/Users/Abhi/AndroidStudioProjects/PlacementAdmin/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

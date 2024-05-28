@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Placement</string>
+    <string name="register"> <u>Register</u></string>
+    <string name="pending_verification_msg">Your account has been created successfully.Please wait
+    patiently while we are verifying your account.</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="sign_in_to_your_account">Sign in to your account</string>
+    <string name="don_t_have_a_account">Don\'t have a account?</string>
+    <string name="continue_text">Continue</string>
+    <string-array name="courses">
+        <item>UG</item>
+        <item>PG</item>
+        <item>PHD</item>
+    </string-array>
+
+    <string-array name="campusType">
+        <item>InCampus</item>
+        <item>OffCampus</item>
+    </string-array>
+
+    <string-array name="noOfRounds">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="branches">
+        <item>Core</item>
+        <item>ITES</item>
+        <item>Service</item>
+        <item>Internship</item>
+    </string-array>
+    <string-array name="industryType">
+        <item>Core</item>
+        <item>ITES</item>
+        <item>Service</item>
+        <item>Internship</item>
+    </string-array>
+    <string-array name="sscMarks">
+        <item>Minimum 60%</item>
+        <item>Minimum 65%</item>
+        <item>No Criteria</item>em>
+    </string-array>
+    <string-array name="hscMarks">
+        <item>Minimum 60%</item>
+        <item>Minimum 65%</item>
+        <item>No Criteria</item>em>
+    </string-array>
+    <string-array name="diplomaMarks">
+        <item>Minimum 60%</item>
+        <item>Minimum 65%</item>
+        <item>No Criteria</item>em>
+    </string-array>
+    <string-array name="engineeringMarks">
+        <item>Minimum 60%</item>
+        <item>Minimum 65%</item>
+        <item>No Criteria</item>em>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>No criteria</item>em>
+    </string-array>
+    <string-array name="department">
+        <item>Computer Engineering</item>
+        <item>Information Technology</item>
+        <item>Civil Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Production Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Automation and Robotics</item>
+        <item>E and TC Engineering</item>
+        <item>Electronics and Computer Engineering</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

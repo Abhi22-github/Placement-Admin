@@ -1,0 +1,176 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PlacementAdmin" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- theme for text layout -->
+    <style name="text_field_layout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/margin_end</item>
+        <item name="backgroundColor">@color/fargrey</item>
+        <item name="hintEnabled">true</item>
+        <item name="boxStrokeWidth">.2dp</item>
+        <item name="boxStrokeColor">@color/text_layout_border_color_selector</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="hintTextColor">@color/text_layout_border_color_selector</item>
+        <item name="hintTextAppearance">@style/hintText</item>
+    </style>
+
+    <style name="hintText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+
+    </style>
+
+    <!-- theme for edit text -->
+    <style name="edit_text_layout">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/dm_sans_regular</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="company_details_label">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/box_hint_color</item>
+        <item name="fontFamily">@font/gst_regular</item>
+    </style>
+
+    <style name="company_details_info">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/gst_regular</item>
+    </style>
+
+    <style name="company_details_linear_layout_size">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/margin_end</item>
+    </style>
+
+    <style name="PrimaryHeading">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/dm_sans_medium</item>
+    </style>
+
+    <style name="MaterialTextInputHeader">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/gst_medium</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="company_details_header">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/gst_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MaterialHintText">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MaterialInputTextEditText">
+        <item name="fontFamily">@font/product_sans_regular</item>
+    </style>
+
+    <style name="form_overview">
+        <item name="fontFamily">@font/manrope_semibold</item>
+        <item name="android:textColor">@color/black_icon</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="admin_main_tab_text">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/manrope_semibold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- theme for text layout dropdown -->
+    <style name="drop_down_style" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/margin_end</item>
+        <item name="backgroundColor">@color/fargrey</item>
+        <item name="hintEnabled">true</item>
+        <item name="boxStrokeWidth">.2dp</item>
+        <item name="boxStrokeColor">@color/text_layout_border_color_selector</item>>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="hintTextColor">@color/text_layout_border_color_selector</item>
+        <item name="hintTextAppearance">@style/hintText</item>
+    </style>
+
+    <style name="exposed_dropdown_textView">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/product_sans_regular</item>
+    </style>
+
+    <style name="placeholder_text">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/product_sans_regular</item>
+    </style>
+
+    <style name="LoadingProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">@color/green</item>
+    </style>
+
+
+    <!-- new theming -->
+
+    <style name="student_info_heading">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontFamily">@font/manrop_regular</item>
+        <item name="android:layout_marginTop">@dimen/margin_student_heading_distance</item>
+    </style>
+
+    <style name="student_info_details">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+
+    <style name="box_background_hint">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/box_hint_color</item>
+    </style>
+
+    <style name="box_background_text">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="background">@null</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_rounded_corner</item>
+    </style>
+
+    <style name="chipStyle" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipCornerRadius">5dp</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipStrokeColor">@color/chip_border_color_selector</item>
+        <item name="chipBackgroundColor">@color/chip_background_selector</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+</resources>

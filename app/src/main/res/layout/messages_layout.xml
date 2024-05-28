@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/receiver_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/receiver_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/l1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/avcoe_logo" />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toRightOf="@id/receiver_image"
+            android:background="@drawable/message_border"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/box_border_message_name"
+                android:backgroundTint="@color/fargrey"
+                android:padding="5dp"
+                android:textIsSelectable="true">
+
+                <TextView
+                    android:id="@+id/receiver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:gravity="start"
+                    android:text="Abhishek Satpute"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/receivers_back">
+
+                <TextView
+                    android:id="@+id/receiver_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:inputType="textMultiLine|textLongMessage|textNoSuggestions"
+                    android:padding="10dp"
+                    android:text="message"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sender_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sender_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/l2"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/avcoe_logo" />
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_toLeftOf="@id/sender_image"
+            android:background="@drawable/message_border"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/green"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/sender_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="Abhishek Satpute"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/receivers_back">
+
+                <TextView
+                    android:id="@+id/sender_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:inputType="textMultiLine|textLongMessage|textNoSuggestions"
+                    android:padding="10dp"
+                    android:text="message"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_start"
+        android:paddingTop="5dp"
+        android:paddingEnd="@dimen/margin_end"
+        android:paddingBottom="5dp">
+
+      <!--  <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/final_circle_image_vie"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/avcoe_logo"
+            android:visibility="gone" />-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_border"
+            android:elevation="3dp"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/final_circle_image_view"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/avcoe_logo" />
+
+            <TextView
+                android:id="@+id/final_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/final_circle_image_view"
+                android:layout_alignBottom="@id/final_circle_image_view"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@id/final_circle_image_view"
+                android:fontFamily="@font/product_sans_regular"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/department_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/final_circle_image_view"
+                android:layout_alignBottom="@id/final_circle_image_view"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/final_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/final_name"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

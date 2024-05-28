@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileEditActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:elevation="0dp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/black" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/image_relative_layout"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_background"
+            android:backgroundTint="@color/box_background_color">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_circle_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/add_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_add_a_photo_24"
+                app:tint="@color/grey" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_image"
+                style="@style/LoadingProgressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:background="@drawable/box_border"
+            android:backgroundTint="@color/box_background_color">
+
+            <TextView
+                style="@style/box_background_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_start"
+                android:text="Name" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_text"
+                style="@style/box_background_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_box_text"
+                android:background="@null"
+                android:inputType="textNoSuggestions"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:background="@drawable/box_border"
+            android:backgroundTint="@color/box_background_color">
+
+            <TextView
+                style="@style/box_background_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_start"
+                android:text="Department" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/department_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_box_text"
+                android:background="@null"
+                app:boxBackgroundColor="@color/box_background_color"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:endIconMode="dropdown_menu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/department_autocomplete_textview"
+                    style="@style/box_background_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingStart="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:background="@drawable/box_border"
+            android:backgroundTint="@color/box_background_color">
+
+            <TextView
+                style="@style/box_background_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_start"
+                android:text="Number" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                style="@style/box_background_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_box_text"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/create_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:elevation="2dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/green"
+                android:insetTop="1dp"
+                android:insetBottom="1dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:stateListAnimator="@null"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:elevation="3dp"
+                android:theme="@style/ProgressBarStyle"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
